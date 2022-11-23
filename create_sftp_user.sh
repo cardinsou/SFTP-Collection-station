@@ -103,7 +103,8 @@ enablePasswd() {
 
 printInfo() {
 	echo "[+] Configuration complete";
-	echo "[+] Add SFTP handler users to group $sftp_handler_group_name with command: usermod -aG $sftp_handler_group_name <username>"
+	echo "[+] Remember to set password for user $username with command: passwd $username";
+	echo "[+] Remember to add SFTP handler users to group $sftp_handler_group_name with command: usermod -aG $sftp_handler_group_name <username>"
 }
 
 while getopts ":u:" flag
