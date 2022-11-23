@@ -19,19 +19,23 @@ create_sftp_user.sh -u <username>
 The script must be executed with administrative privileges, so if you are not root run it with sudo command. Script automates the following configurations:
 
 - **Create a jailed environment**
+  
   The script create the home folder for SFTP user in "/sftp_home"
 
 - **Create user and groups**
-  The script create the user specified with -u parameter with home folder located in "/sftp_home/<username>".
+  
+  The script create the user specified with -u parameter with home folder located in "/sftp_home/username".
   
   The script create also two groups:
   - sftp, used to apply sftp configuration in SSH daemon file, every user in sftp group can login only with SFTP protocol
   - sftp-handlers, used to manage sftp users, every user in sftp handlers-group has read and write permissions on sftp users home and can change password for sftp users.  
   
 - **Configure SSH daemon for SFTP**
-  The script apply all the necessary configuration to SSH daemon in oreder to use SFTP.
+  
+  The script apply all the necessary configuration to SSH daemon in oreder to use only SFTP protocol for specified users.
   
 - **Configure sudo**
+  
   The script configure sudo in oreder to permit execution of command "sudo passwd <sftp user username>" to all users member of "sftp-handlers" group
 
 ## Troubleshooting and modification
