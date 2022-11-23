@@ -1,14 +1,14 @@
 #!/usr/bin/bash
 
 usage() {
-	echo "Usage: create_sftp_user_with_jail.sh [-u <username>]";
+	echo "Usage: create_sftp_user.sh [-u <username>]";
 	exit 1;
 }
 
 checkAdmin() {
 	if (( $EUID != 0 ))
 	then
-		echo "[-] Error - Please use sudo ./create_sftp_user_with_jail.sh [-u <username>]";
+		echo "[-] Error - Please use sudo ./create_sftp_user.sh [-u <username>]";
 		exit 1;
 	fi
 }
