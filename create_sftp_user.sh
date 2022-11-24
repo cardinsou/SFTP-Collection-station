@@ -31,7 +31,7 @@ verifyUserExist() {
 }
 
 createGroup() {
-	sftp_group_name="sftp"
+	sftp_group_name="sftp-login"
 	sftp_handler_group_name="sftp-handler"
 	if ! grep -q $sftp_group_name /etc/group
 	then
