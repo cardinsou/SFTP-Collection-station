@@ -40,6 +40,13 @@ The script must be executed with administrative privileges, so if you are not ro
 
 You can run the script multiple time to create more than one sftp user.
 
+## Daily usage
+
+- Change sftp user password
+- Share sftp username + password 
+- Wait files upload
+- Manage files 
+
 ## Troubleshooting and modification
 
 - **Login after hardening**
