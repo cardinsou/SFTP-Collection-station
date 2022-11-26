@@ -51,7 +51,7 @@ You can run the script multiple time to create more than one sftp user.
 
 - **Login after hardening**
   
-  If the machine was hardened with [this](https://github.com/cardinsou/Ubuntu-22.04-hardening) script or if you are using google OTP libpam you need to modify /etc/pam.d/sshd configration file:
+  If the machine was hardened with [this](https://github.com/cardinsou/Ubuntu-22.04-hardening) script or if you are using google OTP libpam you need to modify /etc/pam.d/sshd configuration file:
   
   Before:
   ```
