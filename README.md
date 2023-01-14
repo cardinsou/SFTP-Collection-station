@@ -1,6 +1,8 @@
 # SFTP Collection station
 
-This script is made to automatically configure a jailed SFTP environment on Ubuntu 22.04 OS. The environment could be used to acquire files from external sources with the following benefit:
+This script is made to automatically configure a jailed SFTP environment on Ubuntu OS. Tested on Ubuntu 22.04.
+
+The environment could be used to acquire files from external sources with the following benefit:
 
 - Usage of temporary SFTP users
 - Usage of jailed users, SFTP users cannot move through filesystem, they are locked in their home folder
